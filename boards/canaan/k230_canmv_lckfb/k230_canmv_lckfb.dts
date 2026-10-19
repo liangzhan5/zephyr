@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2024 Junhui Liu <liujh2818@outlook.com>
+ * Copyright (c) 2026 Zhian Liang <liangzhan5dev@gmail.com>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+
+#include "canaan/k230.dtsi"
+
+/ {
+	model = "Canaan CanMV-K230-LCKFB";
+	compatible = "cannan,k230_canmv_lckfb";
+
+	ddr: memory@30000000 {
+		device_type = "memory";
+		reg = <0x0 0x30000000 0x0 0x40000000>;
+	};
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,sram = &ddr;
+	};
+};
+
+&uart0 {
+	status = "okay";
+	current-speed = <115200>;
+};
+
+&uart3 {
+        status = "okay";
+        current-speed = <115200>;
+};
+

@@ -1,0 +1,10 @@
+# Copyright (c) 2024 Junhui Liu <liujh2818@outlook.com>
+# Copyright (c) 2026 Zhian Liang <liangzhan5dev@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+board:
+  name: k230_canmv_lckfb
+  full_name: Canaan K230 CanMV LCKFB
+  vendor: canaan
+  socs:
+    - name: k230

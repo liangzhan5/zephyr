@@ -1,0 +1,6 @@
+# Copyright (c) 2024 Junhui Liu <liujh2818@outlook.com>
+# Copyright (c) 2026 Zhian Liang <liangzhan5dev@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_K230_CANMV_LCKFB
+	select SOC_CANAAN_K230
